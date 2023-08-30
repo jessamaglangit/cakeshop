@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/Gerrman-cake-logo.png" alt="logo" width="100" height="90"></a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#speciality">Speciality</a>
+            <a href="#popular">Popular</a>
+            <a href="#gallery">Gallery</a>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i><p id="count">0</p>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box" style="">
+                        <img src="images/speciality/special-1.jpg" alt="1" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Choco Delight Cake</div>
+                            <div class="cart-price">$24.65</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bxs-trash-alt cart-remove'></i>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+                
+            </div>
+        </nav>  
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>cakes made with love</h3>
+            <p>"I want people to fall in love with themselves and be really proud 
+                and full of joy for the space they occupy. If someone else appreciates 
+                the space you're taking up, then that's icing on the cake."</p>
+                <h1>Order Now !!!</h1>
+        </div>
+        <div class="image">
+        </div>
+    </section>
+    <section class="speciality" id="speciality">
+        <h1 class="heading"> our <span>speciality</span></h1>
+        <div class="box-container">
+            <div data-id="1" class="box">
+                <img src="images/speciality/special-1.jpg" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Choco Delight Cake</h3> 
+                    <p>
+                        Product Contains: 
+                        Shape Round
+                        Flavor: Chocolate
+                        Candle and knife(Free)
+                        We offer handcrafted cake as our chef has his/her own way of baking and 
+                        designing cake, therefore it might be slightly varied in the product look and design.  
+                    </p> 
+                    <span class="price">$24.65</span>
+                </div> 
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart" >Add to Cart</a> 
+                </div>
+            </div>
+            <div data-id="2" class="box">
+                <img src="images/speciality/special-2.jpg" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Stunning black forest cake</h3>
+                    <p> A mini chocolate cake and a small-batch red velvet cake are sure to bring friends, family and 
+                        loved ones together in a delicious way. You'll turn any occasion into something special with one 
+                        of these unforgettable cakes so try them all and don't forget to pin your favorites! We can assure
+                        that you will have fun with our Stunning Black Forest Cake! 
+                    </p>
+                    <span class="price">$24.65</span> 
+                </div>
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart">Add to Cart</a> 
+                </div>
+            </div>
+            <div data-id="3" class="box">
+                <img src="images/speciality/special-3.jpg" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Luscious Strawberry Cake</h3>
+                    <p>This cream-based cake has strawberry glazing on the sides and giant fresh off the farm strawberries 
+                        on the top, along with chocolate decorative. Strawberries make a meal feel gourmet. The cake itself 
+                        has a moist and tender texture, while the strawberries infuse a natural sweetness and a subtle tanginess.
+                        Have Fun!
+                    </p>
+                    <span class="price">$24.65</span> 
+                </div>
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart">Add to Cart</a> 
+                </div>
+            </div>
+            <div data-id="4" class="box">
+                <img src="images/speciality/special-4.jpg" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Ferro cake</h3>
+                    <p>Two layers of rich chocolate cake filled with milk chocolate frosting, Nutella and caramelized hazelnuts.
+                        Decorated with a chocolate drip, Ferrero Rochers and caramelized hazelnuts.
+                    </p>
+                    <span class="price">$24.65</span> 
+                </div>
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart">Add to Cart</a> 
+                </div>
+            </div>
+            <div data-id="5" class="box">
+                <img src="images/speciality/special-5.webp" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Chocolate Easter Special</h3>
+                    <p>From traditional tiered cakes to layered biscuits our specialities are endless! These delectable treats can be 
+                        done in cake, biscuit or meringue so the choices of taste and flavours is endless!
+                    </p>
+                    <span class="price">$24.65</span>
+                   
+                </div>
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart">Add to Cart</a> 
+                </div>
+            </div>
+            <div data-id="6" class="box">
+                <img src="images/speciality/special-6.webp" alt="as" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Cream Cake</h3>
+                    <ul class="list">
+                        <li>
+                            Cake Flavour - Rosmalai (can be customized)
+                        </li>
+                        <li>
+                            Type of Cake - Cream Cake
+                        </li>
+                        <li>
+                            Weight- 1/2 kg to 1kg
+                        </li>
+                        <li>
+                            Shape- Round
+                        </li>
+                        <li>
+                            Serves- 8-10 People
+                        </li>
+                        <li>
+                            Enjoy!
+                        </li>
+                    </ul>
+                    <span class="price">$24.65</span> 
+                </div>
+                <div style="display: flex; justify-content: center; padding: 0 0 20px;">
+                    <a href="#" class="btn add-cart">Add to Cart</a> 
+                </div>
+            </div>            
+        </div> 
+    </section>
+    <section class="popular" id="popular">
+        <h1 class="heading"> most <span>popular</span> cakes </h1>
+        <h3>Red Ribbon</h3>
+        <div class="box-container">
+            <div data-id="7" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/CAKES-PEACH-MANGO.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Peach Mango</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="8" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Caramel Crunch Regular.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Caramel Crunch</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="9" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Chocolate Dedication Cake 8x12.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Choco Dedication Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="10" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Chocolate Heaven Regular.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Chocolate Heaven</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>   
+            </div>
+            <div data-id="11" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/chocolatemousse.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Chocolate Mousse</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="12" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/mango-dedication.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Mango Dedication</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="13" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Mango-Roll.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Mango Roll</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="14" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/triple-chocolate-roll-red-ribbon-cake.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Triple Chocolate Roll</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>   
+            </div>
+            <div data-id="15" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/ube-bloom.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Ube Bloom</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="16" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/product-black-forest-cake.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Black Forest</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="17" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Mocha-Roll.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Mocha Roll</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="18" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/Mango-Supreme--Cake.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Mango Supreme</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="19" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/yema-caramel-red-ribbon-cake.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Yema Caramel</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="20" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/rockyroad1.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Rocky Road</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>     
+            </div>
+            <div data-id="21" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/red ribbon/whole-choco-regular.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Choco Mallow</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+        </div>
+
+        <h5>goldilocks</h5>
+
+        <div class="box-container-1">
+
+            <div data-id="22" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Chocolate_Cake_by_Goldilocks.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Chocolate Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="23" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Mango_Luscious_Cake.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Mango Luscious Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="24" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/christmas-cake-08.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Christmas Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>   
+            </div>
+            <div data-id="25" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/pastel-blooms-strawberry-8x12-goldilocks-cake-large.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Pastel Blooms Strawberry</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="26" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Royalfudgetobleron_600.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Royal Fudgetobleron</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>   
+            </div>
+            <div data-id="27" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Ultimate_Mocha_Symphony.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Ultimate Mocha Symphony</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+            <div data-id="28" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Cheese-Supreme-Cake.png" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Supreme Cheese Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>    
+            </div>
+            <div data-id="29" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Black-Forest.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Black Forest</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div> 
+                <a href="#" class="btn">add to cart</a>   
+            </div>
+            <div data-id="30" class="box">
+                <span class="price">$24.65</span>
+                <img src="images/goldilocks/Strawberry-Patel-Cake.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h2 class="product-title">Ultimate Cherry Cake</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>  
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h1 class="heading"> our cake <span> gallery </span></h1>
+        <div class="box-container">
+            <div data-id="31" class="box">
+                <img src="images/gallery/fruit-cake-5.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Fruit Cake</h3>
+                    <span class="price">$24.65</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div data-id="32" class="box">
+                <img src="images/gallery/carrot-cake-7-683x1024.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Carrot Cake</h3>
+                    <span class="price">$24.65</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div data-id="33" class="box">
+                <img src="images/gallery/Toffee Apple Cake.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Toffee Apple Cake</h3>
+                    <span class="price">$24.65/span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div data-id="34" class="box">
+                <img src="images/gallery/delicious-cake-isolated-white-8036454.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Isolated White Cake</h3>
+                    <span class="price">$24.65</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div data-id="35" class="box">
+                <img src="images/gallery/delicious-cakes-16165098.webp" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Jelly Cake</h3>
+                    <span class="price">$24.65</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div data-id="36" class="box">
+                <img src="images/gallery/redvelvetcake9-650x890.jpg" alt="cake" width="300" height="250" class="product-img">
+                <div class="content">
+                    <h3 class="product-title">Delicious Choco Red Velvet Cake</h3>
+                    <span class="price">$24.65</span>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="cakeshop.js"></script>
+    
+    
+</body>
+</html>
